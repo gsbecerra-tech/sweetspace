@@ -8,8 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
-
-    <script src="https://unpkg.com/lucide@latest" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    
+  <script src="https://unpkg.com/lucide@latest" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
 
   <link rel="stylesheet" href="css/style.css"
@@ -35,9 +36,11 @@
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#productos">Productos</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#oferta">Oferta</a></li>
+           <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
           <li><a href="#contacto">Contacto</a></li>
+
+
         </ul>
         <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Sweet Space.')">
           <i data-lucide="message-circle-heart"></i> Pedir ahora
@@ -60,7 +63,7 @@
         <p class="hero-subtitle">
           Te ofrecemos una variedad de pasteles y postres deliciosos, elaborados con amor y creatividad para endulzar 
           tus momentos especiales.</p>
-        <a href="#menu" class="btn btn-coffee hero-cta">
+        <a href="#productos" class="btn btn-coffee hero-cta">
           Descubre nuestros productos <i data-lucide="arrow-right" class="icon-sm"></i>
         </a>
       </div>
@@ -80,7 +83,7 @@
 
     <!-- AQUÍ AGREGAR ALGO SOBRE NOSOTROS, MISIÓN, VISIÓN -->
 
-       <section id="nosotros" class="about-section">
+       <section id="about" class="about-section">
       <div class="container about-grid">
         <img
           src="img/producto.jpg"
@@ -94,7 +97,9 @@
           <p class="eyebrow text-sand">Nosotros</p>
           <h2 class="section-title">Nuestra Historia</h2>
           <p class="about-text">
-            Sweet Space nació de la pasión por la repostería y el deseo de compartir momentos especiales a través de postres deliciosos. Lo que comenzó como una idea de crear dulces únicos se convirtió en un proyecto lleno de creatividad, ilusión y amor por cada detalle.
+            Sweet Space nació de la pasión por la repostería y del deseo de crear algo especial a través de los postres. Creemos que cada celebración, reunión o pequeño momento merece un toque dulce que lo haga inolvidable. Comenzamos con la idea de ofrecer pasteles y postres que no solo destacaran por su sabor, sino también por su presentación, creatividad y dedicación. Poco a poco, convertimos esa idea en una marca donde cada detalle importa.
+            Nos inspira crear nuevas combinaciones de sabores, diseños atractivos y experiencias que hagan felices a nuestros clientes. Por eso, ponemos cariño y dedicación en cada preparación, buscando que cada producto tenga algo especial. En Sweet Space queremos ser parte de tus momentos favoritos, endulzando cada ocasión con postres hechos para disfrutar y compartir.
+            Porque los mejores momentos también tienen un sabor dulce.
           </p>
           <p class="about-text">
             Queremos compartir nuestra pasión a través de cada creación y endulzar momentos especiales con un toque único.
@@ -107,7 +112,7 @@
 
     <!-- AQUÍ VAN NUESTROS PRODUCTOS -->
 
-     <section id="menu" class="container menu-section">
+     <section id="productos" class="container menu-section">
       <div class="section-header-center">
         <p class="eyebrow">Nuestros productos</p>
         <h2 class="section-title">Descubre nuestra deliciosa selección</h2>
@@ -211,7 +216,7 @@
       </section>
 
        <!-- Diferenciadores -->
-    <section class="perks-section">
+    <section class="perks-section" id="beneficios">
       <div class="container perks-grid">
         
         <!-- Diferenciador 1 -->
@@ -245,6 +250,68 @@
       </div>
     </section>
 
+  <!-- Dirección y contacto -->
+   <section id="contacto" class="container contact-section">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2 class="section-title">Nos encontramos ubicados en:</h2>
+        <p class="muted-note">Ubicación y Contacto</p>
+
+
+         <ul class="contact-list">
+          <li><a href="https://maps.app.goo.gl/RdyYJcZLK5HEasF6A"> 
+            <i data-lucide="map-pin" class="contact-icon">
+
+          </i> C.Colima-Roma Nte, Cuahutémoc</li></a>
+          <li><i data-lucide="phone" class="contact-icon"></i> (55) 1009 3011</li>
+          <li><i data-lucide="mail" class="contact-icon"></i> infopedidos@sweetspace.com</li>
+          <li><i data-lucide="clock" class="contact-icon"></i> Lunes a Viernes: 9:00 AM - 8:00 PM</li>
+        </ul>
+
+
+        <a
+          href="https://wa.me/525510093011"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp-btn"
+        >
+          <i data-lucide="message-circle" class="icon-sm"></i> WhatsApp 
+        </a>
+        <p class="footnote">+52 55 1009 3011</p>
+      </div>
+
+   
+<!--FORMULARIO DE CONTACTO - DUDAS - SUGEREGNCIAS, ETC -->
+ <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" maxlength="100" />
+          <p id="error-name" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" maxlength="255" />
+          <p id="error-email" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" maxlength="1000"></textarea>
+          <p id="error-message" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <button type="submit" class="btn-formulario">Enviar mensaje</button>
+
+
+        <p id="form-status" class="form-status" role="status" hidden>
+          ¡Gracias por escribirnos, nos pondremos en contacto contigo pronto! 
+        </p>
+      </form>
+    </section>
 
 
 
@@ -252,7 +319,7 @@
 
 
     <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="site-footer" id="contacto">
     <div class="container footer-inner">
       <a href="#inicio" class="logo logo-light" aria-label="Sweet Space, inicio">
         
@@ -263,15 +330,16 @@
 
       <nav class="footer-nav" aria-label="Navegación pie de página">
         <a href="#inicio">Inicio</a>
-        <a href="#productos">productos</a>
+        <a href="#productos">Productos</a>
         <a href="#about">About</a>
         <a href="#contacto">Contacto</a>
       </nav>
 
 
       <div class="social-links">
-        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+        <a href="https://www.instagram.com/sarahi.gonzaleez?evlk=YjdraW8zeTdxYXhr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1FpKtmY7wM/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@sarahibg4?_r=1&_t=ZS-9BjFDglYOxg" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
       </div>
     </div>
 
